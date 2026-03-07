@@ -3,7 +3,7 @@ name: Tesla Model Monitor
 on:
   schedule:
     # 6시간마다 실행 (UTC 기준 0, 6, 12, 18시)
-    - cron: "0 0,6,12,18 * * *"
+    - cron: "*/2 * * * *"
   workflow_dispatch: # 수동 실행 지원
 
 permissions:
